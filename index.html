@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Responsive Dropdown Navbar</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="brand">MUHAMMED FUAD</div>
+        <!-- Hamburger icon: shown on smaller devices -->
+        <button class="toggle-menu" aria-label="Toggle navigation">&#9776;</button>
+        <ul class="nav-menu" id="navbars">
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#skill">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="portfolio" class="section portfolio">
+        <div class="desc">
+          <h2>Hi,</h2>
+          <h2>I'm <span class="highlight">Muhammed Fuad</span></h2>
+          <h2>a Tech Enthusiast</h2>
+          <p class="para">
+            Exploring the endless possibilities of technology – one project, one idea, one challenge at a time.
+          </p>
+          <div class="btn-group">
+            <a class="btn" href="#about">About Me</a>
+            <a class="btn" href="#contact">Contact</a>
+          </div>
+        </div>
+        <div class="imgdiv">
+          <img src="images/mypic4.jpg" alt="Profile Picture" class="pic" />
+        </div>
+      </section>
+
+      <section id="skill" class="section">
+        <header class="section-header">SKILLS</header>
+        <div class="skilldesc">
+          <h3>Programming Languages</h3>
+          <div class="skill-icons">
+            <img src="images/c.png" alt="C" class="imgskill" />
+            <img src="images/c++.jpeg" alt="C++" class="imgskill" />
+            <img src="images/java.png" alt="Java" class="imgskill" />
+            <img src="images/python.png" alt="Python" class="imgskill" />
+          </div>
+          <h3>Frontend Development</h3>
+          <div class="skill-icons">
+            <img src="images/html.png" alt="HTML" class="imgskill" />
+            <img src="images/css.png" alt="CSS" class="imgskill" />
+          </div>
+          <h3>Database</h3>
+          <div class="skill-icons">
+            <img src="images/mysql.png" alt="MySQL" class="imgskill" />
+          </div>
+          <h3>Others</h3>
+          <div class="skill-icons">
+            <img src="images/linux.jpeg" alt="Linux" class="imgskill" />
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <header class="section-header">PROJECTS</header>
+        <div class="project">
+          <article class="projdesc">
+            <h4>1. Local Shop Marketing</h4>
+            <img src="images/shopy.png" alt="Local Shop Marketing" class="imgproj" />
+            <p>
+                The Local Shop Marketing App is a full-stack application designed to empower small, local businesses by providing them with a digital platform to showcase their products and services. The app bridges the gap between local shops and customers, enabling shop owners to set up profiles, upload product catalogs, create promotional offers, and interact with customers via an integrated messaging system.<br><br>
+                For end users, the app offers a user-friendly interface that includes features such as product browsing, cart management, order tracking, and location-based search functionality.<br><br>
+                The frontend is developed using HTML, CSS, and Bootstrap, ensuring a responsive and intuitive user interface. The backend logic is implemented in Python with MySQL as the database, all managed via JetBrains PyCharm. Additionally, a native mobile application was built using Android Studio and Java to extend functionality on mobile devices.
+            </p>
+          </article>
+          <article class="projdesc">
+            <h4>2. College Enquiry Chatbot</h4>
+            <img src="images/cec_chat.png" alt="College Enquiry Chatbot" class="imgproj" />
+            <p>
+              This project develops a chatbot to streamline college communications between students, staff, and administration.
+              Through automation, the system will minimize human intervention, allowing staff to focus on more critical tasks while students receive accurate and timely information.<br><br>
+              This project falls within the domains of artificial intelligence, chatbot development, and education technology. It involves the implementation of machine learning and NLP techniques through tools such as Dialogflow, as well as web development framework Django for backend support.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <header class="section-header">ABOUT ME</header>
+        <div class="about">
+          <div class="picabout">
+            <img src="images/myfoto.jpg" alt="About Me" class="pic2" />
+          </div>
+          <div class="aboutdesc">
+            <p>
+                Hi, I'm Muhammed Fuad, a passionate and curious software engineering student with a keen interest in building intelligent systems and solving real-world problems through code. I specialize in Python and enjoy working on projects that involve chatbot development, web applications, and data structures and algorithms.<br><br>
+
+                Currently, I'm pursuing my degree while actively exploring AI-driven technologies like natural language processing, Retrieval-Augmented Generation (RAG), and API development. My goal is to create seamless, human-like interactions through smart chatbots and contribute to meaningful tech solutions.<br><br>
+                
+                When I'm not coding, you’ll find me learning new tools, contributing to open-source projects, or experimenting with ideas to improve user experience and automation.<br><br>
+                
+                Let’s connect and create something impactful together!
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <header class="section-header">CONTACT</header>
+        <div class="contact-container">
+          <h2>Contact Me</h2>
+          <form id="contact-form" action="https://formspree.io/f/mgvadqbg" method="POST">
+            <label for="name">Name:</label>
+            <input id="name" type="text" name="name" placeholder="Your Name" required />
+
+            <label for="email">Your Email:</label>
+            <input id="email" type="email" name="email" placeholder="eg: abc@gmail.com" required />
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" placeholder="Description" required></textarea>
+
+            <button type="submit">Send</button>
+            <p id="form-status"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
